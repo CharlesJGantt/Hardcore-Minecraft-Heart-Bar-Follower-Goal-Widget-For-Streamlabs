@@ -42,21 +42,6 @@ A custom Streamlabs Goal Widget that replaces the default progress bar with a Mi
 
 ---
 
-## Repository Structure
-
-```text
-follower-goal-hearts/
-├── README.md
-├── html.html
-├── css.css
-├── js.js
-├── assets/
-│   └── hc-heart.png
-└── preview.png
-```
-
----
-
 ## Installation
 
 ### 1. Create a Goal Widget
