@@ -1,3 +1,7 @@
+![License](https://img.shields.io/github/license/CharlesJGantt/Hardcore-Minecraft-Heart-Bar-Follower-Goal-Widget-For-Streamlabs)
+![Version](https://img.shields.io/github/v/release/CharlesJGantt/Hardcore-Minecraft-Heart-Bar-Follower-Goal-Widget-For-Streamlabs)
+![Stars](https://img.shields.io/github/stars/CharlesJGantt/Hardcore-Minecraft-Heart-Bar-Follower-Goal-Widget-For-Streamlabs)
+
 # Minecraft Hardcore Heart Follower Goal Widget
 
 A custom Streamlabs Goal Widget that replaces the default progress bar with a Minecraft-inspired Hardcore heart display.
@@ -138,6 +142,18 @@ const CONFIG = {
 | `title`       | Widget header text      | `Follower Goal` |
 | `heartImage`  | Uploaded asset filename | `hc-heart.png`  |
 
+---
+Demo
+
+See the widget in action during live streams:
+
+🎮 Twitch: https://www.twitch.tv/AndyTheMakerMC
+
+Live Stream Schedule
+Monday — 7:00 PM Eastern
+Wednesday — 7:00 PM Eastern
+Friday — 7:00 PM Eastern
+Saturday — 7:00 PM Eastern
 ---
 
 ## How It Works

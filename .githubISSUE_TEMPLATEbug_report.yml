@@ -1,0 +1,132 @@
+```yaml
+name: Bug Report
+description: Report a problem with the Minecraft Hardcore Heart Follower Goal Widget for Streamlabs.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report an issue.
+
+        Please complete the information below so the problem can be reproduced and investigated.
+
+        Before submitting, please verify that you have:
+
+        - Uploaded `hc-heart.png` to the Streamlabs widget Assets tab
+        - Refreshed the browser source cache
+        - Copied the latest HTML, CSS, and JavaScript files into your widget
+        - Reviewed the README and troubleshooting documentation
+
+  - type: input
+    id: widget-version
+    attributes:
+      label: Widget Version
+      description: What version of the widget are you using?
+      placeholder: v1.0.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Which platform are you using?
+      options:
+        - Streamlabs Desktop
+        - Streamlabs Web
+        - OBS Browser Source
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: streamlabs-version
+    attributes:
+      label: Streamlabs Version
+      description: What version of Streamlabs Desktop are you using?
+      placeholder: 1.x.x
+
+  - type: input
+    id: browser-size
+    attributes:
+      label: Browser Source Dimensions
+      description: What dimensions are configured for the browser source?
+      placeholder: "362 × 90"
+
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: Describe the Issue
+      description: Provide a clear description of the problem.
+      placeholder: Describe what happened and what you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Steps to Reproduce
+      description: List the steps required to reproduce the issue.
+      placeholder: |
+        1. Create a new follower goal widget
+        2. Upload hc-heart.png
+        3. Paste the provided code
+        4. Add the widget to Streamlabs Desktop
+        5. Observe the issue
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: console-errors
+    attributes:
+      label: Console Errors
+      description: Copy and paste any browser console errors here.
+      render: shell
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      description: Include any additional details that may help troubleshoot the issue.
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I uploaded `hc-heart.png` to the Streamlabs widget Assets tab.
+          required: true
+
+        - label: I refreshed the browser source cache after making changes.
+          required: true
+
+        - label: I copied the latest HTML, CSS, and JavaScript files from this repository.
+          required: true
+
+        - label: I searched existing issues before creating this report.
+          required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag and drop screenshots here if applicable.
+```
