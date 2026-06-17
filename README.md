@@ -2,7 +2,7 @@
 
 A custom Streamlabs Goal Widget that replaces the default progress bar with a Minecraft-inspired Hardcore heart display.
 
-![Preview](assets/preview.png)
+[![Preview](preview.png)](preview.png)
 
 ## Features
 
@@ -176,6 +176,7 @@ Each heart slot is generated dynamically:
 The widget redraws itself automatically whenever the goal updates.
 
 ---
+![In-Game Screenshot](in-game-screen.png)
 
 ## Customization
 
