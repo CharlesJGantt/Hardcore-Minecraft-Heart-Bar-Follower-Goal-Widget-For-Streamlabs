@@ -1,0 +1,28 @@
+{
+  "title": "Minecraft Hardcore Follower Goal Widget",
+  "version": "1.0.0",
+  "author": "Charles J Gantt",
+  "description": "A Streamlabs follower goal widget that uses Minecraft Hardcore hearts instead of a progress bar.",
+
+  "config": {
+    "totalHearts": 25,
+    "heartsPerRow": 13,
+    "title": "Follower Goal",
+    "heartImage": "hc-heart.png",
+    "fontFamily": "Press Start 2P",
+    "widgetWidth": 362,
+    "widgetHeight": 90
+  },
+
+  "assets": [
+    "assets/hc-heart.png",
+    "preview.png"
+  ],
+
+  "streamlabs": {
+    "widgetType": "Goal Widget",
+    "goalType": "Follower Goal",
+    "recommendedBrowserWidth": 362,
+    "recommendedBrowserHeight": 90
+  }
+}

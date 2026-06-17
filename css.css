@@ -1,0 +1,162 @@
+/* Remove default spacing and keep the widget background transparent */
+html,
+body,
+#wrap {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  overflow: hidden;
+}
+
+/* Outer wrapper sized to the heart bar */
+.goal-wrap {
+  display: inline-block;
+  width: 362px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main widget styling */
+.minecraft-goal {
+  display: inline-block;
+  width: 362px;
+  margin: 0;
+  padding: 0;
+
+  /* Streamlabs already has this font available */
+  font-family: 'Press Start 2P', monospace;
+
+  color: #ffffff;
+  text-shadow: 2px 2px 0 #000000;
+}
+
+/* Header row containing "Follower Goal" and current/target numbers */
+.goal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 362px;
+  font-size: 14px;
+  line-height: 1.5;
+
+  margin: 0 0 10px 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for all 25 hearts */
+.heart-bar {
+  display: flex;
+  flex-wrap: wrap;
+
+  /* Small gap between hearts */
+  gap: 2px;
+
+  /*
+    13 hearts fit on the first row:
+    13 slots × 26px = 338px
+    12 gaps × 2px = 24px
+    Total = 362px
+  */
+  width: 362px;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* Each heart sits inside a fixed-size slot */
+.heart-slot {
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Prevents flexbox from resizing the slots */
+  flex: 0 0 26px;
+}
+
+/* Filled heart PNG */
+.heart-image {
+  width: 22px;
+  height: 22px;
+
+  /* Keeps the Minecraft-style pixel art sharp */
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+
+  filter: drop-shadow(1px 1px 0 #000);
+}
+
+/* Slightly enlarge filled hearts */
+.heart-image.filled {
+  transform: scale(1.05);
+}
+
+/* Empty heart text character */
+.heart-text {
+  display: inline-block;
+
+  /* Larger than the PNG so the outline visually matches */
+  font-size: 32px;
+  line-height: 1;
+
+  color: rgba(255, 255, 255, 0.4);
+  text-shadow: 1px 1px 0 #000;
+}
+
+/* Empty heart animation group A */
+.heart-text.pulse-a {
+  animation: pulseA 2s infinite ease-in-out;
+}
+
+/* Empty heart animation group B */
+.heart-text.pulse-b {
+  animation: pulseB 2.8s infinite ease-in-out;
+}
+
+/* Empty heart animation group C */
+.heart-text.pulse-c {
+  animation: pulseC 3.6s infinite ease-in-out;
+}
+
+/* Faster, slightly brighter pulse */
+@keyframes pulseA {
+  0%, 100% {
+    opacity: 0.30;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.60;
+    transform: scale(1.08);
+  }
+}
+
+/* Medium pulse */
+@keyframes pulseB {
+  0%, 100% {
+    opacity: 0.25;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.50;
+    transform: scale(1.05);
+  }
+}
+
+/* Slower, softer pulse */
+@keyframes pulseC {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.55;
+    transform: scale(1.06);
+  }
+}
